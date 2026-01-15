@@ -13,10 +13,10 @@ class Vehiculo(ABC):
 
     @abstractmethod
     def describir_comportamiento(self) -> str:
-        """Método abstracto que obliga a las hijas a implementar su comportamiento."""
+        """Metodo abstracto que obliga a las hijas a implementar su comportamiento."""
         pass
 
     def registrar_recorrido(self, km: float):
-        """Método para modificar el atributo encapsulado."""
+        """Metodo para modificar el atributo encapsulado."""
         if km > 0:
             self._kilometraje += km
